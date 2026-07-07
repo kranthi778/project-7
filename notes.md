@@ -145,3 +145,167 @@ In this part I learned:
 - How to use the Metasploit console.
 
 - How to check what version of Metasploit I have.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Part 2 – Exploit Selection and Payload Configuration
+
+## Objective
+
+I want to learn how to find the exploit modules get detailed information about an exploit choose the best exploit and set up a payload for a target in a lab.
+
+---
+
+# Why Select the Correct Exploit?
+
+Before I try to exploit a target I need to do a things. I have to find the exploit.
+I have to understand what the exploit needs. I have to choose a payload that works with the exploit..
+I have to set up the target information.
+If I choose the exploit or payload my assessment will probably fail.
+
+---
+
+## 1. Search for an Exploit
+
+### Scenario
+
+I need to search the Metasploit module database for an exploit that works with the target service.
+
+### Command
+
+```bash
+
+search vsftpd
+
+```
+
+### Description
+
+This command searches the Metasploit database for exploit modules that are related to the VSFTPD service. The VSFTPD service is what I am looking for.
+
+### Screenshot
+
+![Alt text](screenshots/search-vsftpd.png)
+
+---
+
+## 2. Display Exploit Information
+
+### Scenario
+
+I want to review information about the exploit I selected. The exploit is what I need to learn more about.
+
+### Command
+
+```bash
+
+info exploit/unix/ftp/vsftpd_234_backdoor
+
+```
+
+### Description
+
+This command shows me information, about the exploit, including what it does where I can find information what targets it works with what payloads I can use and what options I need to set. The exploit is what I am trying to learn about.
+
+### Screenshot
+
+![Alt text](screenshots/exploit-information.png)
+
+---
+
+## 3. Select the Exploit Module
+
+### Scenario
+
+I need to load the exploit module into my workspace. The exploit module is what I want to use.
+
+### Command
+
+```bash
+
+use exploit/unix/ftp/vsftpd_234_backdoor
+
+```
+
+### Description
+
+This command loads the VSFTPD backdoor exploit module, which's the exploit I want to use. Now I can set it up.
+
+### Screenshot
+
+![Alt text](screenshots/use-exploit-module.png)
+
+---
+
+## 4. Display Required Options
+
+### Scenario
+
+I need to review the configuration I need to set up before I run the exploit. The exploit is what I am trying to set up.
+
+### Command
+
+```bash
+
+show options
+
+```
+
+### Description
+
+This command shows me what options I need to set up for the exploit module I selected. The exploit module is what I am working with.
+
+### Screenshot
+
+![Alt text](screenshots/show-options.png)
+
+---
+
+## 5. Display Compatible Payloads
+
+### Scenario
+
+I want to see what payloads work with the exploit I selected. The exploit is what I am trying to find payloads for.
+
+### Command
+
+```bash
+
+show payloads
+
+```
+
+### Description
+
+This command lists all the payloads that work with the exploit module I loaded. The exploit module is what I am using.
+
+### Screenshot
+
+![Alt text](screenshots/show-payloads.png)
+
+---
+
+# Key Concepts Learned
+
+- I learned about exploit discovery. Exploit discovery is what I did.
+
+- I learned about exploit modules. Exploit modules are what I used.
+
+- I learned about compatibility. Payload compatibility is important.
+
+- I learned about module configuration. Module configuration is what I did.
+
+- I learned about options. Required options are what I needed to set up.
+
+---
+
+# conclusion
+
+In this part I learned how to find exploit modules. 
+I learned how to review exploit documentation. 
+I learned how to load an exploit module. 
+I learned how to identify configuration options. 
+I learned how to view payloads before I try to exploit a target. 
+The exploit is what I was working with.
