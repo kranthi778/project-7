@@ -375,7 +375,7 @@ I need to pick a payload that works with the exploit.
 
 ```bash
 
-set PAYLOAD cmd/unix/interact
+set PAYLOAD <select the payload>
 
 ```
 
@@ -485,3 +485,161 @@ In this part I learned how to configure an exploit, how to pick the payload how 
 I learned about the Metasploit Framework and how to use it to exploit a target and establish a Meterpreter session. 
 The Meterpreter session is a part of the exploitation process. 
 I will use the Metasploit Framework to configure the exploit and establish a Meterpreter session.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Part 4 – Looking at the Results of a Security Test
+
+## What We Want to Do
+
+We need to learn how to look at the results of a security test that we did in a lab. We have to write down what we found and think about what it means for security. We also want to know what happens if we do not fix a problem that we found.
+
+---
+
+# Why Write Down the Results?
+
+When we finish a security test we have to write down what we found. This is because writing it down helps us remember what happened.
+
+Writing down the results helps us to:
+
+- Remember what we did
+
+- Know which system had a problem
+
+- Understand how bad the problem is
+
+- Say what we should do to fix it
+
+- Make our security better in the future
+
+---
+
+## 1. Look at the Test Results
+
+### What We Are Doing
+
+We are looking at the results of our security test.
+
+### What to Do
+
+1. Write down the operating system we used.
+
+2. Write down the service that had a problem.
+
+3. Write down the problem that we found.
+
+4. Say if we were able to prove that the problem is real.
+
+### Picture
+
+![Alt text](screenshots/assessment-result.png)
+
+---
+
+## 2. Document the Validated Vulnerability
+
+### What We Are Doing
+
+We are writing down the vulnerability that we made sure exists during the lab test that we were allowed to do.
+
+### Steps
+
+1. Keep the session open.
+
+2. Look at the information, from the session that worked.
+
+3. Write down which service is affected and which machine is the target.
+
+4. Make sure that we really found a vulnerability.
+
+### Description
+
+Writing down the vulnerability that really exists helps us keep track of what we did. It shows which service is affected, which system is the target and what happened during the lab exercise that we were allowed to do.
+
+### Screenshot
+
+![Alt text](screenshots/vulnerability-documentation.png)
+
+---
+
+## 3. Check How Bad the Security Problem Is
+
+### What We Are Doing Now
+
+We are looking at how bad the security problem could be if we do not fix the vulnerability we found.
+
+### Steps We Take
+
+1. We go over all the information we got when we checked the system.
+
+2. We find out which service is affected by the problem.
+
+3. We think about what could happen if we do not fix the vulnerability.
+
+4. We write down what this means for security.
+
+### Why We Do This
+
+Checking the security impact helps us understand how the vulnerability we found could affect the security of the system.
+ It helps us see if someone could get into the system and get information or if they could change things they should not change or if they could stop the system from working.
+ This is important, for the vulnerability because it is a security problem that we need to fix. The security impact of the vulnerability is what we are trying to understand.
+
+### Screenshot
+
+![Alt text](screenshots/security-impact.png)
+
+---
+
+## 4. Recommend Remediation
+
+### What We Are Doing
+
+We are writing down the recommended steps to make the identified vulnerability safer.
+
+### Steps
+
+1. Take a look at the confirmed vulnerability.
+
+2. Find out which software or service is affected.
+
+3. Write down what needs to be done to fix it.
+
+4. Note down the security improvements that should be made.
+
+### Description
+
+Recommending ways to fix the problem is the step, in assessing a vulnerability. It gives advice on how to reduce or get rid of the security risk that was found.
+
+### Screenshot
+
+![Alt text](screenshots/remediation-recommendations.png)
+
+---
+
+# What I Learned
+
+- How to write down security information
+
+- How to think about security risks
+
+- How to think about the impact of a security problem
+
+- How to prove that a security problem is
+
+- How to plan to fix security problems
+
+---
+
+# conclusion
+
+In this part I learned:
+
+- How to write down the results of a security test.
+
+- How to think about the security risks of a problem that we found.
+
+- How to say how to fix a security problem.
+
+- Why writing down security information is a part of keeping our systems safe.
