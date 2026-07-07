@@ -277,6 +277,80 @@ show payloads
 
 ```
 
+## Understanding the Payload List
+
+### What We Are Learning
+
+When we look at the list of payloads that work with Metasploit it is really important to know how they are organized.
+
+Each name of a payload tells us some things about it:
+
+- what family it belongs to
+
+- what operating system it is meant for
+
+- what technology it uses if that applies
+
+- what type of payload it is
+
+Knowing how these names work helps people who do security tests figure out if a payload will work during a test.
+
+### Example
+
+```text
+
+payload/cmd/unix/python/meterpreter/reverse_tcp
+
+```
+
+### Breakdown
+
+| Component | Meaning |
+
+
+| cmd | This is a command payload family |
+
+|unix | This is meant for Unix- systems |
+
+| python | It uses Python on the system it targets |
+
+meterpreter | This is a meterpreter payload |
+
+| reverse_tcp | It uses TCP to communicate |
+
+### Common Payload Families
+
+| Payload Family | Purpose |
+
+
+| Windows | These payloads are for Windows systems |
+
+|Linux | These payloads are for Linux systems |
+
+|Unix | These payloads are for Unix- systems |
+
+| PHP | These payloads use PHP on the system they target |
+
+| Python | These payloads use Python on the system they target |
+
+| Meterpreter | This is a kind of payload that lets you interact with it |
+
+| Command Shell | These payloads let you run commands |
+
+### Why This Matters
+
+Understanding what the names of payloads mean helps people who do security tests:
+
+- know what system a payload is meant for
+
+- know if a payload will work
+
+- pick the right payloads when they are doing authorized security tests
+
+- understand what Metasploit modules do when they are testing security
+
+> **Note:** The payloads you can use depend on the exploit module you choose. Might be different, in different versions of Metasploit.
+
 ### Description
 
 This command lists all the payloads that work with the exploit module I loaded. The exploit module is what I am using.
