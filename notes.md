@@ -309,3 +309,179 @@ I learned how to load an exploit module.
 I learned how to identify configuration options. 
 I learned how to view payloads before I try to exploit a target. 
 The exploit is what I was working with.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Part 3 – Exploiting the Target and Establishing a Meterpreter Session
+
+## Objective
+
+I want to learn how to set up the exploit use it on a target in the lab and start a Meterpreter session using the Metasploit Framework.
+
+---
+
+# Why Configure the Exploit?
+
+Before I start the exploit I need to make sure everything is set up correctly.
+
+The important things to configure include:
+
+- The Target IP Address
+
+- The Payload
+
+- The Local Host if I need it
+
+- The Local Port if I need it
+
+If I do this correctly the exploit will talk to the right target.
+
+---
+
+## 1. Configure the Target IP Address
+
+### Scenario
+
+I need to tell the exploit the IP address of the target machine.
+
+### Command
+
+```bash
+
+set RHOSTS <target-ip>
+```
+
+### Description
+
+This sets the target that the exploit will try to reach.
+
+I should replace the IP address with the one of my target.
+
+### Screenshot
+
+![Alt text](screenshots/set-rhosts.png)
+
+---
+
+## 2. Select the Payload
+
+### Scenario
+
+I need to pick a payload that works with the exploit.
+
+### Command
+
+```bash
+
+set PAYLOAD cmd/unix/interact
+
+```
+
+### Description
+
+This sets the payload that will run if the exploit works.
+
+> **Note:** I should use the payload that matches the exploit and the one I used in the lab.
+
+### Screenshot
+
+![Alt text](screenshots/set-payload.png)
+
+---
+
+## 3. Verify the Configuration
+
+### Scenario
+
+I should check all the settings before I start the exploit.
+
+### Command
+
+```bash
+
+show options
+
+```
+
+### Description
+
+This shows me all the settings for the exploit, including the target and payload.
+
+### Screenshot
+
+![Alt text](screenshots/verify-options.png)
+
+---
+
+## 4. Execute the Exploit
+
+### Scenario
+
+I can now start the exploit on the target in the lab.
+
+### Command
+
+```bash
+
+run
+
+```
+
+### Description
+
+This starts the exploit with the settings I chose.
+
+If it works I will get a session.
+
+### Screenshot
+
+![Alt text](screenshots/run-exploit.png)
+
+---
+
+## 5. Verify the Meterpreter Session
+
+### Scenario
+
+I need to make sure the exploit started a session.
+
+### Command
+
+```bash
+
+sessions
+
+```
+
+### Description
+
+This lists all the sessions that the Metasploit Framework is managing.
+
+### Screenshot
+
+![Alt text](screenshots/active-sessions.png)
+
+---
+
+# Key Concepts Learned
+
+- How to configure an exploit
+
+- How to choose a payload
+
+- How to set up a target
+
+- What a Meterpreter session is
+
+- How to manage sessions
+
+---
+
+# conclusion
+
+In this part I learned how to configure an exploit, how to pick the payload how to start an exploit on a target, in the lab and how to verify that a Meterpreter session was started. 
+I learned about the Metasploit Framework and how to use it to exploit a target and establish a Meterpreter session. 
+The Meterpreter session is a part of the exploitation process. 
+I will use the Metasploit Framework to configure the exploit and establish a Meterpreter session.
